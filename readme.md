@@ -49,7 +49,9 @@ Para ello, podemos abrir la aplicación de reservas de parking desde un navegado
 
 Clonar el repositorio y ejecutar **'npm install'**.
 
-Para lanzar el script basta con ejecutar **'node postBooking.js'**.
+Necesitamos crear el fichero .env con la estructura que se muestra en example.env y con todos los datos rellenados.
+
+Una vez creado el fichero .env, para lanzar el script basta con ejecutar **'node postBooking.js'**.
 
 Actualmente, han llevado mucha lógica a la aplicación de reserva y es muy difícil saber qué criterios han aplicado. De hecho, la llamada que realiza la reserva devuelve el mismo resultado (http 202 OK) tanto si la reserva se ha podido efectuar como si no (o puede que una vez efectuada se haga alguna comprobación real de la plaza y si se concedió en una plaza no habilitada, puede que se elimine después la reserva). También tendrían así la posibilidad de detectar peticiones que no pueden venir por la aplicación, con lo que podrían ver con qué usuarios se están realizando y banearles, así que hay que usar esto con especial cuidado.
 
