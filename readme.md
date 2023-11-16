@@ -13,6 +13,7 @@ Para hacer la petición necesitamos un Access-Token que previamente necesitamos 
 También necesitamos un conjunto de variables de entorno que guardamos en un fichero .env con la url a la que atacamos, ids del parking, el usuario y datos del vehículo que utilizará la plaza.
 
 
+
 ## Ficheros
 
 
@@ -33,6 +34,7 @@ Fichero de instalación de node. De momento solo declaramos dependencias.
 Este mismo archivo de información.
 
 
+
 ## Requisitos
 
 Necesitamos tener instalado node.
@@ -40,6 +42,7 @@ Necesitamos tener instalado node.
 Necesitamos conocer el contenido de todas las variables de entorno.
 
 Para ello, podemos abrir la aplicación de reservas de parking desde un navegador y, con las herramientas para desarrolladores, ir viendo las peticiones fetch que se lanzan. En concreto necesitamos la que realiza la reserva de parking propiamente dicha.
+
 
 
 ## Instalación y puesta en marcha
