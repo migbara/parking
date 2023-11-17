@@ -70,6 +70,7 @@ var options = {
 // launch request
 request(options, function (error, response) {
   if (error) throw new Error(error);
+  cl(options);
   cl(response.statusCode);
   cl(response.body);
 });
